@@ -1,0 +1,177 @@
+.biografia {
+    width: 20%;
+    height: 90vh;
+    overflow: scroll;
+    background: var(--white);
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 60%;
+}
+
+.ricardo {
+    margin-left: 14px;
+    width: 200px;
+    border: 3px solid var(--gray);
+    border-radius: 5px;
+}
+
+.biografia .borde-bio {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 40%;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--orange);
+}
+
+.biografia::-webkit-scrollbar {
+    width: 7px;
+}
+
+.biografia::-webkit-scrollbar-thumb {
+    background: var(--orange);
+    border-radius: 5px;
+}
+
+.montaner-titulos {
+    font-family: var(--font);
+    font-size: 60px;
+}
+
+.section-bio {
+    background-image: url('/images/bgBio.png');
+    padding-bottom: 25px;
+}
+
+.foto-bio img {
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.albumes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.all-albumes {
+    background: var(--gradient);
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.all-albumes iframe {
+    height: 50vh;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.five-song {
+    background: var(--gradient);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.five-song iframe {
+    height: 44vh;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+/*TOUR*/
+
+.all-tour {
+    background-image: url('/images/tourBG.jpg');
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/*ARGENTINA*/
+
+.tituloArgentina {
+    color: var(--argentina);
+    text-shadow: 1px 1px 1px var(--black);
+}
+
+.argentina .comprar {
+    background: none;
+    border: 2px solid var(--argentina);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--argentina);
+    font-size: 15px;
+    transition: ease-in-out 0.2s;
+}
+
+.argentina .comprar:hover {
+    background: var(--argentina);
+    color: var(--white);
+}
+
+
+/*BRASIL*/
+
+.brasil .comprar {
+    background: none;
+    border: 2px solid var(--ybrasil);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--ybrasil);
+    font-size: 15px;
+    transition: ease-in-out 0.2s;
+}
+
+.brasil .comprar:hover {
+    background: var(--ybrasil);
+    color: var(--brasil);
+}
+
+
+/*CHILE*/
+
+.chile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: var(--white);
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 30px;
+    height: 90%;
+}
+
+.chile img {
+    width: 10vw;
+    height: 15vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.chile .comprar {
+    background: none;
+    border: 2px solid var(--chile);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--chile);
+    font-size: 15px;
+    transition: ease-in-out 0.2s;
+}
+
+.chile .comprar:hover {
+    background: var(--chile);
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .biografia {
+        margin-left: 5%;
+    }
+}

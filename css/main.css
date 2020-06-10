@@ -152,6 +152,9 @@
     font-family: var(--font);
     font-size: 20px;
     color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-tabla .comprar {
@@ -162,10 +165,20 @@
     color: var(--argentina);
     font-size: 15px;
     transition: ease-in-out 0.2s;
+    margin: 5px;
 }
 
 .container-tabla .comprar:hover {
     background: var(--argentina);
+    color: var(--white);
+}
+
+.container-tabla .comprar a {
+    color: none;
+    text-decoration: none;
+}
+
+.container-tabla .comprar a:hover {
     color: var(--white);
 }
 

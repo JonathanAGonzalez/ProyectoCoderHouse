@@ -38,8 +38,15 @@
     font-size: 60px;
 }
 
+.titulos {
+    font-family: var(--font);
+    font-size: 60px;
+    color: white;
+}
+
 .section-bio {
     background-image: url('/images/bgBio.png');
+    background-size: cover;
     padding-bottom: 25px;
 }
 
@@ -82,26 +89,72 @@
     margin-top: 20px;
 }
 
+.mapa iframe {
+    width: 50%;
+    height: 50vh;
+}
+
 
 /*TOUR*/
 
 .all-tour {
-    background-image: url('/images/tourBG.jpg');
+    background: url('/images/bg.jpg');
+    background-size: cover;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+.fa-ticket-alt {
+    color: var(--white);
+    margin-right: 20px;
+    transform: rotate(20deg);
+    transition: ease-in-out 0.2s;
+}
+
+.rotacion {
+    transform: rotate(0deg);
+}
+
+.tour .all-tour .tour-image img {
+    margin-left: 35%;
 }
 
 
 /*ARGENTINA*/
 
-.tituloArgentina {
-    color: var(--argentina);
-    text-shadow: 1px 1px 1px var(--black);
+.tabla {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid var(--white);
 }
 
-.argentina .comprar {
+.container-tabla .tabla .rex p:hover {
+    color: red;
+}
+
+.tabla .rex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-tabla .tabla .rex p {
+    font-family: var(--font);
+    font-size: 20px;
+    color: var(--white);
+    margin-right: 20px;
+}
+
+.container-tabla .tabla .fecha {
+    font-family: var(--font);
+    font-size: 20px;
+    color: var(--white);
+}
+
+.container-tabla .comprar {
     background: none;
     border: 2px solid var(--argentina);
     padding: 10px;
@@ -111,7 +164,7 @@
     transition: ease-in-out 0.2s;
 }
 
-.argentina .comprar:hover {
+.container-tabla .comprar:hover {
     background: var(--argentina);
     color: var(--white);
 }
@@ -170,8 +223,44 @@
     color: var(--white);
 }
 
+#icon {
+    font-size: 30px;
+}
+
+.redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.redes a {
+    color: var(--gray);
+}
+
+.redes a:hover {
+    color: var(--purple);
+}
+
 @media (max-width: 768px) {
     .biografia {
         margin-left: 5%;
+    }
+}
+
+@media (max-width: 544px) {
+    .tour .all-tour .tour-image img {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .tour .all-tour .tour-image img {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .tour .all-tour .tour-image img {
+        margin-left: 0;
     }
 }

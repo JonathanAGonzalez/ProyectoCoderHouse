@@ -1,0 +1,33 @@
+.albumes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.all-albumes {
+    background: var(--gradient);
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.all-albumes iframe {
+    height: 50vh;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.five-song {
+    background: var(--gradient);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.five-song iframe {
+    height: 44vh;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}

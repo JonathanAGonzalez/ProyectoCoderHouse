@@ -1,0 +1,56 @@
+.biografia {
+    width: 20%;
+    height: 90vh;
+    overflow: scroll;
+    background: var(--white);
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 60%;
+}
+
+.ricardo {
+    margin-left: 14px;
+    width: 200px;
+    border: 3px solid var(--gray);
+    border-radius: 5px;
+}
+
+.biografia .borde-bio {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 40%;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--orange);
+}
+
+.biografia::-webkit-scrollbar {
+    width: 7px;
+}
+
+.biografia::-webkit-scrollbar-thumb {
+    background: var(--orange);
+    border-radius: 5px;
+}
+
+.montaner-titulos {
+    font-family: var(--font);
+    font-size: 60px;
+}
+
+.titulos {
+    font-family: var(--font);
+    font-size: 60px;
+    color: white;
+}
+
+.section-bio {
+    background: url('../images/bgBio.png');
+    background-size: cover;
+    padding-bottom: 25px;
+}
+
+.foto-bio img {
+    border-radius: 5px;
+    margin-top: 30px;
+}

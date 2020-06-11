@@ -1,6 +1,7 @@
 :root {
     --black: #131515ff;
-    --gray: #2b2c28ff;
+    --gray: rgba(43, 44, 40, 0.39);
+    --graymenu: rgba(43, 44, 40, 0.521);
     --white: #f7fff7ff;
     --orange: #c03221ff;
     --purple: #521945ff;
@@ -19,11 +20,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     height: 100vh;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #video_background {
@@ -42,21 +47,8 @@ header {
     margin-top: 20px;
 }
 
-.container-fluid .row nav ul {
-    display: flex;
-    margin-top: 20px;
-}
-
-.container-fluid .row nav ul li {
-    margin-left: 20px;
-}
-
-.container-fluid .row nav ul li a {
-    color: var(--white);
-    text-decoration: none;
-}
-
-.container-fluid .row nav ul li a:hover {
-    color: var(--gray);
-    border-bottom: 1px solid var(--black);
+.menu-phone {
+    background-color: var(--graymenu);
+    width: 100%;
+    height: 100vh;
 }

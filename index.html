@@ -29,33 +29,22 @@
     <div class="container-fluid">
         <!--CABECERA-->
         <header class="row">
-            <video id="video_background" preload="metadata" src="video/header.mp4" autoplay="" loop="loop" muted="" playsinline=""></video>
+            <video id="video_background" preload="metadata" src="./video/header.mp4" autoplay="" loop="loop" muted="" playsinline=""></video>
+            <nav class="menu-phone menu col-12">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Albumes</a></li>
+                    <li><a href="">Top</a></li>
+                    <li><a href="">Tour</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav>
             <div class="logo col-lg-3">
                 <img src="images/logo.png" alt="logo" class="img-fluid" />
             </div>
-            <!-- <nav class="col-lg-3">
-                <ul>
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="">Tour</a>
-                    </li>
-                    <li>
-                        <a href="">Biografia</a>
-                    </li>
-                    <li>
-                        <a href="">Albumes</a>
-                    </li>
-                    <li>
-                        <a href="">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        -->
         </header>
         <!--BIOGRAFIA-->
-        <h1 class="montaner-titulos col-12 d-block">Ricardo Montaner</h1>
+        <h1 class="montaner-titulos col-12 d-block" id="bioMontaner">Ricardo Montaner</h1>
         <hr class="ricardo">
         <section class="section-bio row">
             <article class="biografia col-11 col-md-4">
@@ -91,7 +80,7 @@
         </section>
         <!--ALBUMES-->
         <section class="albumes row">
-            <h2 class=".montaner-titulos col-12 d-block mt-4">Albumes</h2>
+            <h2 class=".montaner-titulos col-12 d-block mt-4" id="albumesMontaner">Albumes</h2>
             <hr class="ricardo">
             <article class="all-albumes col-12">
                 <iframe src="https://open.spotify.com/embed/album/50k6VtZQku8LJncGUzgBBG" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -112,13 +101,13 @@
         </section>
         <!--TOUR-->
         <section class="tour row">
-            <h2 class="montaner-titulos col-12 d-block">Tour Latino America</h2>
+            <h2 class="montaner-titulos col-12 d-block" id="tourMontaner">Tour Latino America</h2>
             <hr class="ricardo">
             <article class="all-tour col-12">
 
                 <!--ARGENTINA-->
                 <div class="container-tabla col-12 col-lg-3 mb-5 mt-4">
-                    <h2 class="titulos">BRASIL</h2>
+                    <h2 class="titulos">ARGENTINA</h2>
                     <div class="tabla col-12 ">
                         <div class="rex ">
                             <p><i class="fas fa-ticket-alt " id="ticket" style="display: inline-block;"></i>Teatro Gran Rex</p>
@@ -167,7 +156,7 @@
                 </div>
                 <!--CHILE-->
                 <div class="container-tabla col-12 col-lg-3 mb-5 mt-4">
-                    <h2 class="titulos">BRASIL</h2>
+                    <h2 class="titulos">CHILE</h2>
                     <div class="tabla col-12 ">
                         <div class="rex ">
                             <p><i class="fas fa-ticket-alt " id="ticket" style="display: inline-block;"></i>Teatro Gran Rex</p>
@@ -268,7 +257,7 @@
         </section>
         <!--FOOTER-->
         <footer class="row">
-            <h1 class="montaner-titulos col-12 d-block">CONTACTO</h1>
+            <h1 class="montaner-titulos col-12 d-block" id="contactoMontaner">CONTACTO</h1>
             <hr class="ricardo">
             <div class="mapa col-12 ">
                 <h4>Ubicacion</h4>

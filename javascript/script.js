@@ -1,7 +1,12 @@
-let ticket = document.querySelectorAll("#ticket");
+let icoBurger = document.querySelector('#burger');
+let menu = document.querySelector('.menu');
 
-ticket.forEach(element => {
-    let toggle = () => element.classList.toggle("rotacion");
-    element.addEventListener("mouseover", toggle);
-    element.addEventListener("mouseout", toggle);
-})
+console.log(menu)
+
+let toggle = function() {
+    menu.classList.toggle("menu-phone");
+
+}
+
+
+icoBurger.addEventListener("click", toggle);

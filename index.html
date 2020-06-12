@@ -30,18 +30,25 @@
         <!--CABECERA-->
         <header class="row">
             <video id="video_background" preload="metadata" src="./video/header.mp4" autoplay="" loop="loop" muted="" playsinline=""></video>
-            <nav class="menu-phone menu col-12">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Albumes</a></li>
-                    <li><a href="">Top</a></li>
-                    <li><a href="">Tour</a></li>
-                    <li><a href="">Contacto</a></li>
+
+            <!--MENU-->
+            <nav class="menu  col-12">
+                <div class="logo col-lg-3">
+                    <img src="images/logo.png" alt="logo" class="img-fluid" />
+                </div>
+                <!--ICONO HAMBURGUESA-->
+                <i class="fas fa-bars" id="burger"></i>
+                <ul class="mt-5 ">
+                    <li><a href="#video_background">Home</a></li>
+                    <li><a href="#bioMontaner">Biografia</a></li>
+                    <li><a href="#albumesMontaner">Albumes</a></li>
+                    <li><a href="#topMontaner">Top</a></li>
+                    <li><a href="#tourMontaner">Tour</a></li>
+                    <li><a href="#contactoMontaner">Contacto</a></li>
                 </ul>
+
             </nav>
-            <div class="logo col-lg-3">
-                <img src="images/logo.png" alt="logo" class="img-fluid" />
-            </div>
+
         </header>
         <!--BIOGRAFIA-->
         <h1 class="montaner-titulos col-12 d-block" id="bioMontaner">Ricardo Montaner</h1>
@@ -89,7 +96,7 @@
                 <iframe src="https://open.spotify.com/embed/album/7wbN3pVycBy58CMBN5IoiR" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </article>
             <!--TOP FIVE-->
-            <h2 class=".montaner-titulos col-12 d-block mt-4"><strong>TOP</strong> 5 Canciones</h2>
+            <h2 class=".montaner-titulos col-12 d-block mt-4" id="topMontaner"><strong>TOP</strong> 5 Canciones</h2>
             <hr class="ricardo">
             <article class="five-song col-12">
                 <iframe src="https://open.spotify.com/embed/track/6zBhqMbPtsTBtucJ4S4Yc5" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>

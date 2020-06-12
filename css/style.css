@@ -1,6 +1,7 @@
 :root {
     --black: #131515ff;
     --gray: rgba(43, 44, 40, 0.39);
+    --grayfooter: rgba(43, 44, 40);
     --graymenu: rgba(43, 44, 40, 0.521);
     --white: #f7fff7ff;
     --orange: #c03221ff;
@@ -47,8 +48,34 @@ header {
     margin-top: 20px;
 }
 
-.menu-phone {
-    background-color: var(--graymenu);
-    width: 100%;
-    height: 100vh;
+#burger {
+    color: var(--white);
+    padding: 20px;
+    background-color: var(--gray);
+    border-radius: 5px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: var(--white);
+    font-family: var(--font);
+    text-decoration: none;
+}
+
+#burger {
+    display: none;
 }

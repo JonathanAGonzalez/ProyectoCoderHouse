@@ -25,6 +25,33 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    position: relative;
+}
+
+.upup {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    font-size: 20px;
+    position: fixed;
+    transition: ease-in-out 0.3s;
+}
+
+.downdown {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 20px;
+    position: fixed;
+    transition: ease-in-out 0.3s;
+}
+
+.fa-angle-double-up {
+    color: var(--orange);
+    text-shadow: 1px 1px var(--grayfooter);
+}
+
 header {
     height: 100vh;
     position: relative;
@@ -68,12 +95,32 @@ header {
 
 .menu li {
     margin-left: 20px;
+    position: relative;
 }
 
 .menu li a {
     color: var(--white);
     font-family: var(--font);
     text-decoration: none;
+}
+
+.menu li a:hover {
+    color: var(--grayfooter);
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    background: var(--orange);
+    height: 10%;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    transition: ease-in-out 0.4s;
+}
+
+.menu li a:hover::after {
+    width: 100%;
 }
 
 #burger {

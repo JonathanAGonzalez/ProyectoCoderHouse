@@ -2,10 +2,20 @@
     width: 20%;
     height: 90vh;
     overflow: scroll;
-    background: var(--white);
+    background: var(--bio);
+    color: white;
     border-radius: 5px;
     margin-top: 30px;
     margin-left: 60%;
+}
+
+.biografia p strong {
+    color: var(--white);
+    text-shadow: 1px 1px var(--black);
+}
+
+.biografia p {
+    text-shadow: 1px 1px var(--black);
 }
 
 .ricardo {

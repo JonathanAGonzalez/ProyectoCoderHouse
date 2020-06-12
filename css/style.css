@@ -3,6 +3,7 @@
     --gray: rgba(43, 44, 40, 0.39);
     --grayfooter: rgba(43, 44, 40);
     --graymenu: rgba(43, 44, 40, 0.521);
+    --bio: #00000099;
     --white: #f7fff7ff;
     --orange: #c03221ff;
     --purple: #521945ff;
@@ -125,4 +126,12 @@ header {
 
 #burger {
     display: none;
+}
+
+#ultimo div {
+    visibility: hidden;
+}
+
+.rotacion {
+    transform: rotate(10deg);
 }

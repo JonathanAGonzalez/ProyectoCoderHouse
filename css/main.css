@@ -37,7 +37,8 @@
 }
 
 .container-tabla .tabla .rex p:hover {
-    color: red;
+    color: #d39d9d;
+    text-shadow: 1px 1px var(--black);
 }
 
 .tabla .rex {
